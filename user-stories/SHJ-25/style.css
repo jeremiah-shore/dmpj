@@ -4,7 +4,8 @@ html {
 }
 
 ul {
-  background: red;
+  background: #333;
+  color: white;
   padding: 10px;
   border: 1px solid black;
 }
