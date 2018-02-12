@@ -5,7 +5,43 @@
 </head>
 <body>
 
-	
+	<h1>Encapsulation in Java</h1>
+	<p>The following excerpt demonstrates a few of the ideas behind the principle of encapsution in object-oriented design, specifically, in Java.</p>
+
+	<pre><code>
+	public class Example {
+		private int value;
+		private static final int INCREMENT_AMOUNT = 5;
+
+		private Example() {	}
+
+		public Example(int value) {
+			this.value = value;
+		}
+
+		public int getValue() {
+			return value;
+		}
+
+		public int incrementValue() {
+			value += INCREMENT_AMOUNT;
+		}
+	}
+	</code></pre>
+
+	<h2>encapsulated constructor</h2>
+
+	<p>The default constructor is explicitly declared, but no bahavior is defined, and it is also set to <code>private</code>. The effect of this is that no other code can create an instance of <code>Example</code> through its default constructor; the <code>public</code> constructor defined here that accepts an integer is the only valid way to create an <code>Example</code> instance.</p>
+
+	<p>In other words, we are encapsulating the means by which an <code>Example</code> can be created, giving the author full control of this behavior, and assurance that a value is always defined by a user of this API upon instance creation.</p>
+
+	<h2>encapsulated member fields</h2>
+
+	<p>The member variable integer <code>value</code> is also set to <code>private</code>. We are using public methods to retrieve and modify this value so that it cannot be retrieved or reassigned directly. This not only prevents unwanted or unexpected behavior, but allows us to more precisely define the logic related to this class and its attributes.</p>
+
+	<p>A commonly used example of encapsulation uses <code>private</code> member fields and public "getters and setters". However, we may not always want to define our code in this way; we may want to exercise precise control over our variables by defining how they are retrieved, or in this case, modified. Notice the <code>public</code> method <code>incrementValue()</code> and its use of the constant <code>INCREMENT_AMOUNT</code>. In this example, the value can never be reassigned or updated to a user defined value at any point after instance creation. Instead, it must instead always be increased by this predefined increment.</p>
+
+	<p>This function definition encapsulates the update behavior of <code>value</code> from users of this API, more clearly defining how they are intended to interact with our <code>Example</code> class.</p>
 
 </body>
 </html>
