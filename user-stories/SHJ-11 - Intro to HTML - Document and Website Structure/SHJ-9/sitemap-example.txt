@@ -7,6 +7,7 @@ common to every page:
 	-> tagline / brief description
 	-> navigation
 	-> quick jumping off point to generated exams or question categories
+	-> user login
 - footer : 
 	-> navigation
 	-> social media links
@@ -25,8 +26,15 @@ rough sketch (description):
 
 
 other content (not common to every page):
-
-
+- about the service / site
+- practice questions, filterable by category
+- pre generated exams, filterable by category
+- form to create new questions
+- form to generate new exam, select single or multiple categories
+- user account pages:
+	-> profile management
+	-> created question management
+	-> practice test results
 
 rough sitemap:
 
