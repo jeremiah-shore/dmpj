@@ -10,9 +10,18 @@ common to every page:
 - footer : 
 	-> navigation
 	-> social media links
+	-> back to top button
 
 
-rough sketch:
+rough sketch (description):
+ - header at top
+ - navigation beneath header across width of page
+ - sidebar on right: 
+ 	-> for quick navigation to exams / question categories
+ - main content in middle:
+ 	-> left area mirror of right sidebar left blank
+ - footer at bottom:
+ 	-> different display style or structure than header nav
 
 
 other content (not common to every page):
