@@ -1,0 +1,15 @@
+assignment:
+When imagining your own site, imagine the site has this functionality: Its purpose is to help the user test their knowledge of a topic they choose. The user will be able to enter a question, and its associated answers. How many ways can somebody create a question? Single Choice.. Multiple Choice.. What else? The questions can be categorized in some way. Keywords would be a way of putting a question in a given category. The user can search for questions that fall in a given category, and get an exam based on those questions.
+
+common to every page:
+
+
+rough sketch:
+
+
+other content (not common to every page):
+
+
+
+rough sitemap:
+
