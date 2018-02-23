@@ -1,0 +1,7 @@
+1.) fields
+2.) static fields
+3.) method
+4.) parameter
+5.) byte, short, int, long, float, double, char, boolean
+6.) String
+7.) array
