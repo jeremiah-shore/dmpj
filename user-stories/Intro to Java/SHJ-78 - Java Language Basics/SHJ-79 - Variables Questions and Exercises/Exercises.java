@@ -1,9 +1,10 @@
 class Exercises {
-	static int 1number;
-	static char some letter;
+	static int number;
+	static char someLetter;
 
     public static void main(String[] args) {
-
+    	System.out.println(number);
+    	System.out.println(someLetter);
     }
 
 }
