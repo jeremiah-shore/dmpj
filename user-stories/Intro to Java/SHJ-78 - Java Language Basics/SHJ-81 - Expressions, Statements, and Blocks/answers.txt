@@ -1,6 +1,15 @@
+Questions
+
 1.) expressions
 2.) statements
 3.) blocks
 4.) compound
 5.) semicolon or ;
 6.) balanced braces or {}
+
+Exercises
+
+1.) assignment
+2.) increment
+3.) method invocation
+4.) object creation
