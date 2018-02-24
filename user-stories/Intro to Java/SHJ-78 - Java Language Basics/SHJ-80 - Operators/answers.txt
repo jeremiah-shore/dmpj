@@ -1,0 +1,6 @@
+1.) greater than
+2a.) i = 11, n = 0
+2b.) i = 11, n = 1
+3.) logical complement or !
+4.) ==
+5.) This sample uses the ternary operator, which acts as a shorthand for an if-then-else statement. E.g. if someCondition is true, assign value1 to the result variable, but if false assign value2 to result
