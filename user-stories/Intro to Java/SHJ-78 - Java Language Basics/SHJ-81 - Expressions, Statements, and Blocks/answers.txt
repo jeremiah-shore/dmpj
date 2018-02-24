@@ -1,0 +1,6 @@
+1.) expressions
+2.) statements
+3.) blocks
+4.) compound
+5.) semicolon or ;
+6.) curly brackets or {}
