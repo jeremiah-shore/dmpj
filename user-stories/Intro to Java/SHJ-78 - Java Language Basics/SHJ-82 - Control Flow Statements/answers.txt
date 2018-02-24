@@ -1,7 +1,7 @@
 Questions
 
 1.) if-then
-2.) if-then-else
+2.) switch
 3.) do-while, bottom
 4.) for( ; ; ) {}
 5.) while(true){}
