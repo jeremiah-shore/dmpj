@@ -31,6 +31,8 @@
 
 	<h2>encapsulated constructor</h2>
 
+	<p><strong>The information below is incorrect.</strong> This was written at a time when my understanding of Java constructors was a little weaker. For some reason, I had confused details and was under the impression that the default constructor was still allowed by the compiler even when another was explicitly declared. It is worth noting that you can encapsulate constructors if you want to control how an object is instantiated, but you don't need to do what I've outlined below to disallow use of a default constructor; simlpy declaring another has this effect.</p>
+
 	<p>The default constructor is explicitly declared, but no bahavior is defined, and it is also set to <code>private</code>. The effect of this is that no other code can create an instance of <code>Example</code> through its default constructor; the <code>public</code> constructor defined here that accepts an integer is the only valid way to create an <code>Example</code> instance.</p>
 
 	<p>In other words, we are encapsulating the means by which an <code>Example</code> can be created, giving the author full control of this behavior, and assurance that a value is always defined by a user of this API upon instance creation.</p>
