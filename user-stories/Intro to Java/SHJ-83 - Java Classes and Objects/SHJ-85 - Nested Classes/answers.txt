@@ -1,0 +1,6 @@
+1.) remove the static keyword so that the inner class is allowed to access the members of its enclosing class
+2.) a.) Box.Filler
+	b.) Box.AccessibleBox
+	c.) java.awt.Container.AccessibleAWTContainer
+	d.) Box.Filler
+	e.) with its only constructor, e.g.  new Box.Filler(Dimension min, Dimension pref, Dimension max);
