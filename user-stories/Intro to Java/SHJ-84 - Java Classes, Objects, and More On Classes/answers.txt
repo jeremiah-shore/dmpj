@@ -1,0 +1,7 @@
+1.)	a.) x
+	b.) y
+	c.) a.y = 5
+		b.y = 6
+		a.x = 2
+		b.x = 2
+		IndentifyMyParts.x = 2
