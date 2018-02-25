@@ -5,3 +5,11 @@
 		a.x = 2
 		b.x = 2
 		IndentifyMyParts.x = 2
+
+exercises
+
+I really dislike the exercises for this unit. This seems like a really really poor data model—a deck of playing cards—to use to implement the concepts learned in these lessons. It could have been much simpler while still having the students demonstrate the relevant concepts correctly. 
+
+I get how they want to demonstrate how it is to build this without then with enum types, but designing the classes in this way initially really goes against my instincts knowing what already know about enums. I think it defeats the purpose of learning these concepts, or rather, the focus is drawn to the wrong places. There's more time spent getting "type" checking logic to work in a poor design scheme than there is time spent on the basics. 
+
+I'm opting to move on, and I'll spend more time on this specific data/class modelling problem after the enum lesson is finished—I'd rather design it from scratch then.
