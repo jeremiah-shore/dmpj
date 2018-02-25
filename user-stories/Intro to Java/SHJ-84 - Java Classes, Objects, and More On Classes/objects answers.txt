@@ -1,0 +1,4 @@
+1.) This program attempts to access instance variables and methods (members) without first instantiating a Rectangle object.
+2.) Students has 1 reference and the String object with a value of "Peter Parker" has 1 reference within the first indexed location of the students array. Neither object is eligible for garbage collection.
+3.) In Java, programs to not directly destroy objects. They are destroyed by the JVM's garbage collection process once those objects no longer have any references in memory that point to them—this is how the Garbage Collector knows they are no longer being used and can be destroyed. That said, object references can be explicitly set to null so that there are no remaining object references.
+
