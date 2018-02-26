@@ -1,0 +1,1 @@
+1.) false, an enum cannot extend java.lang.String because all enums implicitly extend java.lang.Enum
