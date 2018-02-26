@@ -1,3 +1,5 @@
 1.) the House interface has a deprecated open() method, indicated by the @Deprecated annotation
+		correct answer: "The documentation should reflect why open is deprecated and what to use instead."
 2.) @SuppressWarnings("deprecated")
+		alternative answer: "You can deprecate the implementation of open"
 3.) there will be an error because the @Meal annotation is not declared as repeatable with the @Repeatable annotation
