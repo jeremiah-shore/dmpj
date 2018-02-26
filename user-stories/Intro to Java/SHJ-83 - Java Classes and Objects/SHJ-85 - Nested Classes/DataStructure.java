@@ -1,3 +1,5 @@
+import java.util.function.*;
+
 public class DataStructure {
     
     // Create an array
@@ -11,9 +13,19 @@ public class DataStructure {
         }
     }
     
+    
     public void print(DataStructureIterator iterator) {
         while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
+        }
+        System.out.println();
+    }
+    
+
+    public void print(Function<Integer, Boolean> function) {
+        for(int i : arrayOfInts) {
+            if(function.apply(i))
+                System.out.print(i + " "); 
         }
         System.out.println();
     }
@@ -33,19 +45,19 @@ public class DataStructure {
         // Fill the array with integer values
         final DataStructure ds = new DataStructure();
 
+        //print out only values of even indices
+        ds.print(index -> {
+                if(index % 2 == 0)
+                    return true;
+                return false;
+            }
+        );
+
         //print out only values of odd indices
-        ds.print(
-            new DataStructureIterator() {
-                private int nextIndex = 1;
-                public boolean hasNext() {
-                    return (nextIndex <= ds.getSize() - 1);
-                }
-                public Integer next() {
-                    Integer retValue = Integer.valueOf(ds.getArrayOfInts()[nextIndex]);
-                    nextIndex += 2;
-                    return retValue;
-                }
-                public void remove() {} //just to get the compiler to cooperate wit this example
+        ds.print(index -> {
+                if(index %2 == 1)
+                    return true;
+                return false;
             }
         );
     }
