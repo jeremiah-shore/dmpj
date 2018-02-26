@@ -20,29 +20,28 @@ public class DataStructure {
         }
         System.out.println();
     }
+
+    //lack of the static keyword here gave me A LOT of trouble :(
+    public static Boolean isEven(int integer) {
+        if(integer % 2 == 0)
+            return true;
+        return false;
+    }
+
+    public  static Boolean isOdd(int integer) {
+        return !isEven(integer);
+    }
     
     interface DataStructureIterator extends java.util.Iterator<Integer> { } 
     
     public static void main(String s[]) {
-        
-        // Fill the array with integer values
         final DataStructure ds = new DataStructure();
 
         //print out only values of even indices
-        ds.print(index -> {
-                if(index % 2 == 0)
-                    return true;
-                return false;
-            }
-        );
+        ds.print(DataStructure::isEven);
 
         //print out only values of odd indices
-        ds.print(index -> {
-                if(index %2 == 1)
-                    return true;
-                return false;
-            }
-        );
+        ds.print(DataStructure::isOdd);
     }
 
 }
