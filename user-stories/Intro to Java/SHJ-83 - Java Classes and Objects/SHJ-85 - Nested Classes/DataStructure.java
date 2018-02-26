@@ -12,15 +12,6 @@ public class DataStructure {
             arrayOfInts[i] = i;
         }
     }
-    
-    
-    public void print(DataStructureIterator iterator) {
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next() + " ");
-        }
-        System.out.println();
-    }
-    
 
     public void print(Function<Integer, Boolean> function) {
         for(int i : arrayOfInts) {
@@ -28,14 +19,6 @@ public class DataStructure {
                 System.out.print(i + " "); 
         }
         System.out.println();
-    }
-
-    private int getSize() {
-        return SIZE;
-    }
-
-    private int[] getArrayOfInts() {
-        return arrayOfInts;
     }
     
     interface DataStructureIterator extends java.util.Iterator<Integer> { } 
