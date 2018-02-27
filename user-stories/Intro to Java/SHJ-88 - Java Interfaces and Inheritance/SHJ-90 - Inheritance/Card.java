@@ -1,0 +1,19 @@
+class Card {
+
+	private final Suit suit;
+	private final Rank rank;
+
+	Card(Suit suit, Rank rank) {
+		this.suit = suit;
+		this.rank = rank;
+	}
+
+	Suit getSuit() {
+		return suit;
+	}
+
+	Rank getRank() {
+		return rank;
+	}
+
+}
