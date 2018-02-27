@@ -1,7 +1,7 @@
 package mygame.server;
 
-import mygame.shared.*;
-import mygame.client.*;
+import mygame.shared.Utilities;
+import mygame.client.Client;
 
 import java.io.*;
 import java.net.*;

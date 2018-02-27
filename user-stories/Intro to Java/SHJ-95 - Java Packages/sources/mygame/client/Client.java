@@ -1,6 +1,6 @@
 package mygame.client;
 
-import mygame.utilities.*;
+import mygame.shared.Utilities;
 
 import java.io.*;
 import java.net.*;
