@@ -1,4 +1,4 @@
-public class MaxVariablesDemo {
+public class MinVariablesDemo {
     public static void main(String args[]) {
  
         //integers
