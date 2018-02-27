@@ -1,0 +1,4 @@
+1.)	a.) methodTwo
+	b.) methodFour
+	c.) the cause naming conflicts and would cause compiler errors
+2.) toString, equals, hashCode
