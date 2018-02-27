@@ -1,3 +1,5 @@
+package mygame.server;
+
 import java.io.*;
 import java.net.*;
 
