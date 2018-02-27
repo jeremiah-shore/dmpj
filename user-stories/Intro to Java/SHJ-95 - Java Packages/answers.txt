@@ -1,0 +1,9 @@
+1.) for Server:		package mygame.server;
+	for Utilities:	package mygame.shared;
+	for Client:		package mygame.client;
+2.) the development directory—let's call it "sources"—needs a "mygame" subdirectory with its own subdirectories
+	Server.Java belongs in sources/mygame/server
+	Utilities.Java belongs in sources/mygame/shared
+	Client.java belongs in sources/mygame/client
+3.) the source files would then need import statements if they rely on members of the other newly created packages
+	e.g. if Client relies on Server, then the Client.java file would need: import mygame.server.Server or import mygame.server.*;
