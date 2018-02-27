@@ -11,10 +11,6 @@ public class MaxVariablesDemo {
         float largestFloat = Float.MAX_VALUE;
         double largestDouble = Double.MAX_VALUE;
  
-        //other primitive types
-        char aChar = 'S';
-        boolean aBoolean = true;
- 
         //Display them all.
         System.out.println("The largest byte value is "
                            + largestByte + ".");
@@ -29,15 +25,5 @@ public class MaxVariablesDemo {
                            + largestFloat + ".");
         System.out.println("The largest double value is "
                            + largestDouble + ".");
- 
-        if (Character.isUpperCase(aChar)) {
-            System.out.println("The character " + aChar
-                               + " is uppercase.");
-        } else {
-            System.out.println("The character " + aChar
-                               + " is lowercase.");
-        }
-        System.out.println("The value of aBoolean is "
-                           + aBoolean + ".");
     }
 }
