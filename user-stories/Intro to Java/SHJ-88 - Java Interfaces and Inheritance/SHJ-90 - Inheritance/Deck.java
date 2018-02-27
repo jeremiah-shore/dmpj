@@ -43,7 +43,7 @@ class Deck {
 
 	@Override
 	public int hashCode() {
-		int result = 0;
+		int result = cards.hashCode();
 		for (Card card : cards)
 			result += card.hashCode();
 		return result;
