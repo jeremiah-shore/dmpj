@@ -1,0 +1,19 @@
+questions
+
+1.) the initial capacity of this StringBuilder object is 42 (26 chars + 16)
+2.) a.) 32
+	b.) e
+	c.) char result = hannah.charAt(hannah.indexOf('b'));
+3.) 3, the string is "car"
+4.) 1> "si"
+	2> "se"
+	3> "swe"
+	4> "sweoft"
+	5> "swear oft"
+
+
+exercises
+
+1.) String result = hi + mom;
+	//or
+	String result = hi.concat(mom);
