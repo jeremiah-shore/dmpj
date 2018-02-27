@@ -1,0 +1,17 @@
+1.) a.) the method needed is: Integer.toString(int i, int radix)
+		example: Integer.toString(65, 16); //where 16 is the radix for hexadecimal
+
+			The tutuorial provided answer uses toHexString(), but I noticed toString() first. After seeing that toHexString() exists, I assumed the result might be the same. Then I noticed toHexString() returns an unsigned representation, where as toString() provides a signed representation, and I 
+			started to wonder how the results might be affected by negative input. 
+
+			I wrote a small test program called HexTest to test the difference in output. The integer provided—same as the tutorial question—is 65. Here is this program's output:
+
+				Integer.toString(65, 16) returns "41"
+				Integer.toHexString(65) returns "41"
+				Integer.toString(-65, 16) returns "-41"
+				Integer.toHexString(-65) returns "ffffffbf"
+
+	b.) the method needed is Integer.parseInt(String s, int radix)
+		example: Integer.valueOf("230", 5); //where 230 is the decimal representation of a base 5 number
+	c.) .isNaN() if invoking on an instance of Double, otherwise Double.isNaN(double v)
+2.) false, because Long.valueOf() returns type Long, and Long instanceof Integer is false
