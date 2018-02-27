@@ -1,3 +1,5 @@
+package mygame.shared;
+
 public class Utilities {
     // set DEBUG = false and compile to stop debug messages
     final static boolean DEBUG = true;
