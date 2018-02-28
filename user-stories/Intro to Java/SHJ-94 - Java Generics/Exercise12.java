@@ -19,7 +19,8 @@ class Exercise8 {
 	}
 
 	public static <T> int findFirstRangeInclusive(List<T> list, int begin, int end, UnaryPredicate<T> p) {
-
+		List<T> range = list.subList(begin, ++end);
+		return findFirst(range, p);
 	}
 
 	interface UnaryPredicate<T> {
