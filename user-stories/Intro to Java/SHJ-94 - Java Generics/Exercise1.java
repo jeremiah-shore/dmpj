@@ -7,11 +7,4 @@ class Exercise1 {
 
 	}
 
-	public static <T extends CharSequence> int countIf(Collection<T> c, Predicate<T> p) {
-		int count = 0;
-		for(T elem : c)
-			if(p.test(elem))
-				count++;
-		return count;
-	}
 }
