@@ -3,12 +3,16 @@ import java.util.function.*;
 
 public final class Algorithm {
 
-    public static <T> int findFirst(List<T> list, int begin, int end, Predicate<T> p) {
-
-        for (; begin < end; ++begin)
-            if (p.test(list.get(begin)))
-                return begin;
+    public static <T> int findFirst(List<T> list, Predicate<T> p) {
+        for(T elem : list)
+            if(p.test(elem))
+                return list.indexOf(elem);
         return -1;
+    }
+
+    public static <T> int findFirstRangeEndExclusive(List<T> list, int begin, int end, Predicate<T> p) {
+        List<T> range = list.subList(begin, end);
+        return findFirst(range, p);
     }
 
     // x > 0 and y > 0

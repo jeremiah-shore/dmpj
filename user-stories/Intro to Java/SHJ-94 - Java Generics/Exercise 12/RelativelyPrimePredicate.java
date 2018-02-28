@@ -2,6 +2,8 @@ import java.util.*;
 import java.util.function.*;
 
 class RelativelyPrimePredicate implements Predicate<Integer> {
+    private Collection<Integer> c;
+    
     public RelativelyPrimePredicate(Collection<Integer> c) {
         this.c = c;
     }
@@ -14,5 +16,4 @@ class RelativelyPrimePredicate implements Predicate<Integer> {
         return c.size() > 0;
     }
 
-    private Collection<Integer> c;
 }
