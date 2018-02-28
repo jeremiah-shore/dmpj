@@ -13,7 +13,18 @@ import java.util.*;
 
 class Exercise8 {
 	public static void main(String[] args) {
+		List<Integer> li = Arrays.asList(3, 4, 6, 8, 11, 15, 28, 32);
+        Collection<Integer> c = Arrays.asList(7, 18, 19, 25);
+        UnaryPredicate<Integer> p = new RelativelyPrimePredicate(c);
 
+        int i = ALgorithm.findFirst(li, 0, li.size(), p);
+
+        if (i != -1) {
+            System.out.print(li.get(i) + " is relatively prime to ");
+            for (Integer k : c)
+                System.out.print(k + " ");
+            System.out.println();
+        }
 	}
 
 	public static <T> int findFirst(List<T> list, UnaryPredicate<T> p) {
@@ -33,14 +44,17 @@ class Exercise8 {
 	}
 
 	class RelativelyPrimePredicate implements UnaryPredicate<Integer> {
-		Collection<Integer> c;
+		private Collection<Integer> c;
 
 		RelativelyPrimePredicate(Collection<Integer> c) {
 			this.c = c;
 		}
 
-		boolean test(Integer i) {
-
+		boolean test(Integer x) {
+			for(Integer i : c)
+				if(findGCD(x, i) != 1)
+					retrun false;
+			return c.size() > 0;
 		}
 
 		static int findGCD(int x, int y) {
