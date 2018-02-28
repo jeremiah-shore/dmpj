@@ -1,1 +1,31 @@
 2.) no, the > operator cannot be used on non-primative types
+
+4.) because generics allow for more flexible and resuable code that takes advantage of compile-time type checking
+
+	official answer:
+	- The Java compiler enforces tighter type checks on generic code at compile time.
+	- Generics support programming types as parameters.
+	- Generics enable you to implement generic algorithms.
+
+5.) public class Pair {
+
+	    public Pair(Object key, Object value) {
+	        this.key = key;
+	        this.value = value;
+	    }
+
+	    public Object getKey(); { return key; }
+	    public Object getValue(); { return value; }
+
+	    public void setKey(Object key)     { this.key = key; }
+	    public void setValue(Object value) { this.value = value; }
+
+	    private ObjectK key;
+	    private Object value;
+	}
+
+6.) public static int findFirstGreaterThan(Comparable[] at, Comparable elem) { /*...*/}
+
+7.) yes, this will compile
+
+	System.out.print(n + " "); is a safe operation because Number inherits from Object, so Number and all its possible subclasses will inherit a .toString() method, which the compiler calls be default in scenarios that call for a String object
