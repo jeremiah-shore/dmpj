@@ -14,7 +14,7 @@ class Exercise1 {
 	}
 
 	//not really sure how useful this is, but it works lol
-	private static int countOdd(List<? extends Number> list) {
+	private static <T> int countOdd(List<? extends Number> list) {
 		int count = 0;
 		for(Number n : list)
 			if(n.intValue() % 2 == 1)
