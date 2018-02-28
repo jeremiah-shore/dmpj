@@ -1,1 +1,1 @@
-1.) 
+2.) no, the > operator cannot be used on non-primative types
