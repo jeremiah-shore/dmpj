@@ -11,6 +11,22 @@ greatest common divisor.
 
 class Exercise8 {
 	public static void main(String[] args) {
+
+	}
+
+	public static <T> int findFirst(List<T> list, UnaryPredicate<T> p) {
 		
+	}
+
+	public static <T> int findFirstRangeInclusive(List<T> list, int begin, int end, UnaryPredicate<T> p) {
+
+	}
+
+	interface UnaryPredicate<T> {
+		boolean test(T t);
+	}
+
+	class RelativelyPrimePredicate implements UnaryPredicate<Integer> {
+
 	}
 }
