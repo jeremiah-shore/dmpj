@@ -9,13 +9,18 @@ greatest common divisor.
 
 */
 
+import java.util.*;
+
 class Exercise8 {
 	public static void main(String[] args) {
 
 	}
 
 	public static <T> int findFirst(List<T> list, UnaryPredicate<T> p) {
-		
+		for(T elem : list)
+			if(p.test(elem))
+				return elem;
+		return -1;
 	}
 
 	public static <T> int findFirstRangeInclusive(List<T> list, int begin, int end, UnaryPredicate<T> p) {
