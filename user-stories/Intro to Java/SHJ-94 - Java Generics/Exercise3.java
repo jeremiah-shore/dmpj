@@ -4,6 +4,13 @@ class Exercise3 {
 	public static void main(String[] args) {
 		Integer[] ints = {1, 2, 3, 4};
 
+		System.out.println("before the swap");
+		printArray(ints);
+
+		swapPosition(ints, 0, 3);
+
+		System.out.println("after the swap");
+		printArray(ints);
 	}
 
 	//leaving the obvious ArrayOutOfBoundsException along for the time being
@@ -14,9 +21,9 @@ class Exercise3 {
 	}
 
 	public static <T> void printArray(T[] t) {
-		System.out.println("%nARRAY CONTENTS");
+		System.out.printf("%nARRAY CONTENTS%n");
 		for(T elem : t)
-			System.out.print("element: " + elem);
+			System.out.printf("element: %s%n", elem);
 		System.out.println();
 	}
 }
