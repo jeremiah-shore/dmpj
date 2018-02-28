@@ -29,3 +29,13 @@
 7.) yes, this will compile
 
 	System.out.print(n + " "); is a safe operation because Number inherits from Object, so Number and all its possible subclasses will inherit a .toString() method, which the compiler calls be default in scenarios that call for a String object
+
+9.) no, static fields of a generic type cannot be declared
+
+10.) no, although Circle is a subclass of Shape, Node<Circle> is not a subclass of Node<Shape>
+
+	to get this to compile, the generic declaration for node would need to be Node<T extends Shape> {}
+
+11.) yes, this will compile 
+
+12.) 
