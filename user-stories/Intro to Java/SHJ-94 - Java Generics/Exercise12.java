@@ -33,6 +33,20 @@ class Exercise8 {
 	}
 
 	class RelativelyPrimePredicate implements UnaryPredicate<Integer> {
+		Collection<Integer> c;
 
+		RelativelyPrimePredicate(Collection<Integer> c) {
+			this.c = c;
+		}
+
+		boolean test(Integer i) {
+
+		}
+
+		static int findGCD(int x, int y) {
+			//copied from answer to save time; this algorithm isn't the focus of this lesson
+        	for (int r; (r = x % y) != 0; x = y, y = r) { }
+            return y;
+		}
 	}
 }
